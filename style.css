@@ -1,0 +1,139 @@
+:root {
+    --purple: #2f40d3;
+    --light-purple: #242947;
+    --lighter-purple: #797e9a;
+    --green: #66a663;
+    --white: #fff;
+    --orange: #dbac36;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    background-color: var(--purple);
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    background-color: var(--light-purple);
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+    gap: 5px;
+}
+
+header img {
+    height: 80px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.exit {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.exit:hover {
+    color: white;
+}
+
+main {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap-reverse;
+}
+
+.gridBlocks {
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    justify-content: center;
+    gap: 5px;
+    background-color: var(--light-purple);
+    padding: 20px;
+    border-radius: 20px;
+    flex-grow: 1000; 
+}
+
+.area {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+}
+
+.cell {
+    height: 20px;
+    width: 20px; 
+    background-color: var(--purple);
+    border-radius: 3px;
+}
+
+.pointsBlocks {
+    background-color: var(--light-purple);
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+    flex-grow: 1;
+}
+
+h2{
+    text-align: center;
+    font-style: 20px;
+    margin-bottom: 10px;
+}
+    
+.inputBlocks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+label{
+    background-color: var(--purple);
+    padding: 5px;
+    border-radius: 30px;
+    min-width: 100px;
+    text-align: center;
+    flex-grow: 1;
+}
+label input{
+    display: none;
+}
+label:has(input:checked) {
+    background-color: var(--orange);
+}
+.play-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cell.active{
+    background-color: var(--lighter-purple);
+    cursor: pointer;
+}
+.cell.flag{
+    background-image: url();
+    background-color: var(--green);
+    background-size: contain;
+}
+.cell.bomb{
+    background-image: url();
+    background-color: var(--orange);
+    background-size: contain; 
+}

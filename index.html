@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./images/">
     <title>Сапер</title>
 </head>
 <body>
@@ -16,9 +15,9 @@
     </header>
     <main>
         <div class="gridBlocks">
-            <div class="cell active"></div>
-            <div class="cell flag"></div>
-            <div class="cell bomb"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
             <div class="cell"></div>
             <div class="cell"></div>
             <div class="cell"></div>
@@ -103,7 +102,7 @@
             <div class="inputBlocks">
                 <label>
                     1000
-                    <input type="radio" name="point" value="1000" >
+                    <input type="radio" name="point" value="1000" checked>
                 </label>
                 <label>
                     2000
@@ -125,6 +124,16 @@
             <button class="play-btn">Играть</button>
         </div>
     </main>
+
+    <section>
+        <div class="popUp">
+            <h2>Авторизация</h2>
+            <form id="authorization">
+                <input type="text" name="username">
+            </form>
+        </div>
+    </section>
+
     <script src="./script.js"></script>
 </body>
 </html>

@@ -110,7 +110,7 @@ label input{
 label:has(input:checked) {
     background-color: var(--orange);
 }
-.play-btn {
+.gameButton {
     background-color: #4CAF50;
     color: white;
     padding: 15px 32px;
